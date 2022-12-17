@@ -1,6 +1,6 @@
 use std::fs::File;
 use std::io::prelude::*;
-
+#[allow(dead_code)]
 pub fn calorie_counting(){
     let mut elf_file = File::open(r"C:\Users\owenh\OneDrive\Documents\Coding\Projects\Advent-of-Code\advent_of_code\src\calories_per_elf.txt").expect("Can't open file");
     let mut elves = String::new();
