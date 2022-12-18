@@ -1,10 +1,8 @@
-mod day_one;
-mod day_two;
-mod day_three;
-mod day_four;
+mod days;
+mod utility;
 fn main() {
     // day_one::calorie_counting();
     // day_two::day_two();
     // day_three::day_three();
-    day_four::day_four();
+    days::day_four::day_four();
 }
