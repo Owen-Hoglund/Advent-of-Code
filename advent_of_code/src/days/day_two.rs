@@ -2,7 +2,7 @@ use crate::utility;
 
 #[allow(dead_code)]
 pub fn day_two(){
-    let guide = utility::load_input(r"C:\Users\owenh\OneDrive\Documents\Coding\Projects\Advent-of-Code\advent_of_code\src\input_files\day_two_input.txt");
+    let guide = utility::load_input("two");
 
     let score_one = guide.split("\r\n").map(|x| strategy_one(x)).collect::<Vec<i32>>();
     let final_score_one: i32 = score_one.iter().sum();

@@ -1,7 +1,7 @@
 use crate::utility;
 
 pub fn day_four(){
-    let input = utility::load_input(r"C:\Users\owenh\OneDrive\Documents\Coding\Projects\Advent-of-Code\advent_of_code\src\input_files\day_four_input.txt")
+    let input = utility::load_input("four");
     let ranges = pairing(input);
     count(ranges);
 }
@@ -25,11 +25,13 @@ fn count(ranges: Vec<Vec<i32>>){
 }
 
 // Simple boundary Checking
+#[allow(non_snake_case)] // I will not cowtow to rusts styleguide when it comes to mathematics. This is a SET problem
 fn is_subset(A: (&i32, &i32), B: (&i32, &i32)) -> bool{
     A.0 <= B.0 && A.1 >= B.1 || A.0 >= B.0 && A.1 <= B.1
 } 
 
 // This is definitely not as efficient as just checking a few boundary conditions but I wanted to try a different approach
+#[allow(non_snake_case)]
 fn intersects(A: (&i32, &i32), B: (&i32, &i32)) -> bool {
     (*A.0..=*A.1).filter(|n| (*B.0..= *B.1).contains(n)).count() > 0
 }

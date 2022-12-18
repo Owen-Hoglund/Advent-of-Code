@@ -5,7 +5,7 @@ use crate::utility;
 #[allow(dead_code)]
 pub fn day_three(){
     let alpha_vals = alpha_val();
-    let rucksacks = partition(utility::load_input(r"C:\Users\owenh\OneDrive\Documents\Coding\Projects\Advent-of-Code\advent_of_code\src\input_files\day_three_input.txt"));
+    let rucksacks = partition(utility::load_input("three"));
     let groups = group_sacks(rucksacks.clone());
     let sum = priority_sum_total(rucksacks, &alpha_vals);
     let badge_sum = badge_sum(groups, &alpha_vals);

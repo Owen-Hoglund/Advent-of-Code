@@ -1,7 +1,7 @@
 use crate::utility;
 #[allow(dead_code)]
-pub fn calorie_counting(){
-    let elves = utility::load_input(r"C:\Users\owenh\OneDrive\Documents\Coding\Projects\Advent-of-Code\advent_of_code\src\input_files\day_one_input.txt");
+pub fn day_one(){
+    let elves = utility::load_input("one");
 
     let numbers = elves.split("\r\n\r\n").map(
             |x| x.split("\r\n").map(|y| y.parse::<i32>().unwrap()).collect::<Vec<i32>>().iter().sum()
