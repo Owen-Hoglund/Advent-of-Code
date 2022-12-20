@@ -1,6 +1,6 @@
 use crate::utility;
 
-
+#[allow(dead_code)]
 pub fn day_five(){
     let stacks: String;
     let orders: String;
@@ -28,6 +28,7 @@ fn process_orders(stacks: &mut Vec<Vec<char>>, orders: Vec<Vec<i32>>){
 
     }
 }
+#[allow(dead_code)]
 fn execute_order_version_one(stacks: &mut Vec<Vec<char>>, orders: Vec<i32>){
     println!("Moving {} boxes from position {} to position {}", orders[0], orders[1], orders[2]);
     for _ in 0..orders[0]{

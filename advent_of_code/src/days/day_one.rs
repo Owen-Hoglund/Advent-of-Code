@@ -13,7 +13,7 @@ pub fn day_one(){
             max[2] = max[1];
             max[1] = max[0];
             max[0] = i;
-        } else if i > max[1] {
+        } else if i > max[1] { 
             max[2] = max[1];
             max[1] = i;
         } else if i > max[2] {

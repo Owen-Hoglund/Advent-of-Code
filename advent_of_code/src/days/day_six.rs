@@ -1,5 +1,6 @@
 use crate::utility;
 
+#[allow(dead_code)]
 pub fn day_six(){
     let input = utility::load_input("six");
     print!("{}", chars_to_marker(input));

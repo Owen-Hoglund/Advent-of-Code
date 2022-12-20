@@ -1,5 +1,6 @@
 use crate::utility;
 
+#[allow(dead_code)]
 pub fn day_four(){
     let input = utility::load_input("four");
     let ranges = pairing(input);
